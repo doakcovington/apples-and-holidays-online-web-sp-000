@@ -73,7 +73,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |date,supply|
       date_to_string = date.to_s
       supply_to_string = supply.join(", ")
-      date_array = date_to_string.split(" ")
+      date_array = date_to_string.split("_")
 
       date_array.each do|value|
       puts "  #{value.capitalize}: #{supply_to_string}"
